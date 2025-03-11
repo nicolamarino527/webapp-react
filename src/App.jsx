@@ -8,6 +8,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HomePage from '../pages/HomePage';
 import FilmsPage from '../pages/FimsPage';
 
+
 // layout
 import DefaultLayout from '../layout/DefaultLayout';
 

@@ -1,6 +1,10 @@
+import FilmReview from "../components/FilmReview"
+
 const FilmsPage = () => {
     return (
-        <div> Card del film</div>
+        <div>
+            <FilmReview />
+        </div>
     )
 }
 

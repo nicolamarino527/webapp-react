@@ -1,7 +1,7 @@
-const FilmReviw = () => {
+const FilmReview = () => {
     return (
-        <div className="header"> Review</div>
+        <div> Review</div>
     )
 }
 
-export default FilmReviw
+export default FilmReview

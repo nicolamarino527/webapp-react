@@ -1,14 +1,22 @@
-const FilmReview = () => {
+// importiamo le prop 
+
+const FilmReview = ({ reviewProp }) => {
+
+    const { name, vote, text } = reviewProp
+
     return (
         <div className="review-container">
-            <div className="card" style={{ width: '50em' }}>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Eraserhead.jpg/640px-Eraserhead.jpg" className="card-img-top" alt="..." />
+            <div className="card">
+                <div className="card-header">
+                    {text}
+                </div>
                 <div className="card-body">
-                    <h5 className="card-title">film</h5>
-                    <p className="card-text">
-                        Some quick example text to build on the card title and make up the
-                        bulk of the card's content.
-                    </p>
+                    <blockquote className="blockquote mb-0">
+                        <p>{vote}</p>
+                        <footer className="blockquote-footer">
+                            Someone famous in <cite title="Source Title">{name}</cite>
+                        </footer>
+                    </blockquote>
                 </div>
             </div>
         </div>

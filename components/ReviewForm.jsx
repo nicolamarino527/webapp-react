@@ -19,6 +19,8 @@ const ReviewForm = ({ movie_id, reloadReviews }) => {
 
     // endpoint dell'url
     const urlEndpoint = `http://localhost:3000/api/movies/${movie_id}/reviews`;
+    console.log(movie_id);
+
 
     // funzione per l'invio della richiesta al submit
     const submitReview = (e) => {

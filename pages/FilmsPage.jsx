@@ -6,6 +6,8 @@ import { Link, useParams, useNavigate } from "react-router-dom"
 
 import FilmReview from "../components/FilmReview"
 
+import ReviewForm from "../components/ReviewForm"
+
 const FilmsPage = () => {
 
     // use navigare per redirect
@@ -43,9 +45,12 @@ const FilmsPage = () => {
 
 
     return (
-        <div>
+        <div className="review-container">
             <div>
                 {renderReviews()}
+            </div>
+            <div>
+                <ReviewForm movie_id={movie.id} reloadReviews={fetchMovies} />
             </div>
         </div>
     )

@@ -6,7 +6,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 // pagine
 import HomePage from '../pages/HomePage';
-import FilmsPage from '../pages/FimsPage';
+import FilmsPage from '../pages/FilmsPage';
 
 
 // layout
@@ -20,7 +20,7 @@ function App() {
         <Routes>
           <Route element={<DefaultLayout />}>
             <Route index path="/" element={<HomePage />} />
-            <Route index path="/movies/:id" element={<FilmsPage />} />
+            <Route path="/movies/:id" element={<FilmsPage />} />
           </Route>
         </Routes>
       </BrowserRouter>

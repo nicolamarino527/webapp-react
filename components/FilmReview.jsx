@@ -5,21 +5,21 @@ const FilmReview = ({ reviewProp }) => {
     const { name, vote, text } = reviewProp
 
     return (
-        <div className="review-container">
-            <div className="card">
+        <div>
+            < div className="card" >
                 <div className="card-header">
-                    {text}
+                    Valutazione: {vote}
                 </div>
                 <div className="card-body">
                     <blockquote className="blockquote mb-0">
-                        <p>{vote}</p>
+                        <p>{text}</p>
                         <footer className="blockquote-footer">
-                            Someone famous in <cite title="Source Title">{name}</cite>
+                            <cite title="Source Title">{name}</cite>
                         </footer>
                     </blockquote>
                 </div>
-            </div>
-        </div>
+            </div >
+        </div >
     )
 }
 
